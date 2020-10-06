@@ -14,7 +14,7 @@ import android.widget.Toast;
 import com.example.application.navigationapp.R;
 import com.example.application.navigationapp.ui.Pushups;
 import com.example.application.navigationapp.ui.Cardio;
-import com.example.application.navigationapp.ui.Sensor;
+import com.example.application.navigationapp.ui.GPS;
 
 public class ExercisesFragment extends Fragment {
 
@@ -61,7 +61,7 @@ public class ExercisesFragment extends Fragment {
 
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(getActivity(), Sensor.class);
+                Intent intent2 = new Intent(getActivity(), GPS.class);
                 intent2.putExtra("some", "some data");
                 startActivity(intent2);
             }

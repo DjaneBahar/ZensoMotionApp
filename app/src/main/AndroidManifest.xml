@@ -28,7 +28,9 @@
         </activity>
         <activity android:name=".ui.Cardio"></activity>
         <activity android:name=".ui.Pushups"></activity>
-        <activity android:name=".ui.Sensor"></activity>
+        <activity android:name=".ui.GPS"></activity>
+        <activity android:name=".ui.Squats"></activity>
+
 
     </application>
 
