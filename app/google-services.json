@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1062219113882",
+    "firebase_url": "https://navigationappfindlocation.firebaseio.com",
+    "project_id": "navigationappfindlocation",
+    "storage_bucket": "navigationappfindlocation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062219113882:android:6c08a4c2b1eab006788623",
+        "android_client_info": {
+          "package_name": "com.example.application.navigationapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062219113882-l9geedin4cnjb1v3dn6bs5t64mu092t1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEiOuCPFIWekFtVsYyhu8KNHO9u_Ln0nQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1062219113882-l9geedin4cnjb1v3dn6bs5t64mu092t1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
