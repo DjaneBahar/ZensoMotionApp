@@ -49,16 +49,30 @@ public class Squats extends AppCompatActivity implements SensorEventListener {
 
     int reps = 0;
     int i = 0;
+    double lastValue;
+    boolean squat;
+    double currentValue;
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
-        i++;
-        System.out.println(i);
-        System.out.println(sensorEvent.values[1]);
-        if(sensorEvent.values[1] >= 9.00000) {
-            reps++;
-        }
-        textview.setText(sensorEvent.values[1] + " " +reps);
+        currentValue = sensorEvent.values[1];
 
+        //i++;
+        //System.out.println(i);
+
+        //for(int i = 0; reps < 10; i++){
+        if(/*sensorEvent.values[1] > 0 lastValue < 0.0 && */currentValue < 0.0) {
+            squat = true;
+            //int a = 1;
+        }
+        if(squat==true && currentValue > 0.0){
+            //reps++;
+            squat=false;
+            reps++;
+
+        }
+
+        textview.setText(sensorEvent.values[1] + " " + reps);
+        double lastValue = currentValue;
     }
 
     @Override
