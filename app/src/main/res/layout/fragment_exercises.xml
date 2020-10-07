@@ -7,6 +7,22 @@
     tools:context=".ui.plan.PlanFragment">
 
 
+    <Button
+        android:id="@+id/squats_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:text="Squats"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gps_button"
+        app:layout_constraintVertical_bias="0.083"
+        tools:ignore="MissingConstraints" />
+
     <TextView
         android:id="@+id/text_exercises"
         android:layout_width="match_parent"
@@ -36,8 +52,22 @@
         app:layout_constraintVertical_bias="0.049"
         tools:ignore="MissingConstraints" />
 
+
     <Button
-        android:id="@+id/sensor_button"
+        android:id="@+id/mapactivity_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="mapactivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.325"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/gps_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="GPS"
@@ -59,7 +89,7 @@
         app:layout_constraintHorizontal_bias="0.0"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sensor_button"
+        app:layout_constraintTop_toBottomOf="@+id/gps_button"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 

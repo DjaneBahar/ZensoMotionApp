@@ -12,16 +12,20 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.application.navigationapp.R;
+import com.example.application.navigationapp.ui.MapActivity;
 import com.example.application.navigationapp.ui.Pushups;
 import com.example.application.navigationapp.ui.Cardio;
 import com.example.application.navigationapp.ui.GPS;
+import com.example.application.navigationapp.ui.Squats;
 
 public class ExercisesFragment extends Fragment {
 
     private ExercisesViewModel exercisesViewModel;
     private Button goCardio;
     private Button pushupsbtn;
-    private Button sensorbtn;
+    private Button gpsbtn;
+    private Button squatsbtn;
+    private Button mapactivitybtn;
 
     public View onCreateView(LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -56,14 +60,36 @@ public class ExercisesFragment extends Fragment {
            });
 
 
-        Button sensorbtn = (Button) view.findViewById(R.id.sensor_button);
-        sensorbtn.setOnClickListener(new View.OnClickListener(){
+        Button gpsbtn = (Button) view.findViewById(R.id.gps_button);
+        gpsbtn.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
                 Intent intent2 = new Intent(getActivity(), GPS.class);
                 intent2.putExtra("some", "some data");
                 startActivity(intent2);
+            }
+        });
+
+        Button squatsbtn = (Button) view.findViewById(R.id.squats_button);
+        squatsbtn.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent3 = new Intent(getActivity(), Squats.class);
+                intent3.putExtra("some", "some data");
+                startActivity(intent3);
+            }
+        });
+
+        Button mapactivitybtn = (Button) view.findViewById(R.id.mapactivity_button);
+        mapactivitybtn.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent4 = new Intent(getActivity(), MapActivity.class);
+                intent4.putExtra("some", "some data");
+                startActivity(intent4);
             }
         });
 
