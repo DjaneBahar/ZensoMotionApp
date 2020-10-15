@@ -26,7 +26,7 @@ public class LeaderboardFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rodView = inflater.inflate(R.layout.fragment_leaderboard, container, false);
-
+        suneKnap = rodView.findViewById(R.id.demoknap);
         return rodView;
     }
 }
