@@ -71,7 +71,7 @@ public class Squats extends AppCompatActivity implements SensorEventListener {
 
         }
 
-        textview.setText(sensorEvent.values[1] + " " + reps);
+        textview.setText(reps);
         double lastValue = currentValue;
     }
 
